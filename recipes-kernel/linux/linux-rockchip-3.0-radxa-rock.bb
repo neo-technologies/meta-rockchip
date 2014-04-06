@@ -3,6 +3,6 @@
 
 require recipes-kernel/linux/linux-rockchip-3.0.inc
 
-SRCBRANCH = "wip/rockchip-3.0-radxa-rock"
+SRCBRANCH = "radxa-rock/linux"
 
 COMPATIBLE_MACHINE = "(radxa-rock)"
