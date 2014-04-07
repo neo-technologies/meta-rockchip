@@ -15,6 +15,9 @@ SRCREV_pn-${PN} = "${AUTOREV}"
 
 S = "${WORKDIR}/git"
 
-kernel_do_configure() {
+do_configure_prepend() {
 	make -C "${S}" ${DEFCONFIG}
+
+	# Fix arch QA issues ("Architecture did not match")
+	rm -f ${S}/mkkrnlimg
 }
