@@ -16,5 +16,5 @@ PREFERRED_PROVIDER_virtual/kernel = "linux-rockchip-3.0"
 IMAGE_CLASSES += "rockchip-update-img"
 IMAGE_FSTYPES += "ext3 tar.gz rockchip-update-img"
 
-SERIAL_CONSOLE = "115200 ttyFIQ0"
+SERIAL_CONSOLES = "115200;ttyFIQ0"
 
