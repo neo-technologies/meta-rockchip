@@ -1,7 +1,7 @@
 # Copyright (C) 2014 NEO-Technologies
 # Released under the MIT license (see COPYING.MIT for the terms)
 
-require conf/machine/include/tune-cortexa7.inc
+require conf/machine/include/tune-cortexa9.inc
 
 PREFERRED_PROVIDER_virtual/xserver = "xserver-xorg"
 
