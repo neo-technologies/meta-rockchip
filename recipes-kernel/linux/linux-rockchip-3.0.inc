@@ -21,3 +21,11 @@ do_configure_prepend() {
 	# Fix arch QA issues ("Architecture did not match")
 	rm -f ${S}/mkkrnlimg
 }
+
+do_install_prepend() {
+        # Dummy Makefile so the make target "clean _mrproper_scripts" from kernel.bbclass works.
+        # This is required since the release "daisy".
+        kerneldir=${D}${KERNEL_SRC_PATH}
+        install -d $kerneldir/arch/arm/plat-rk/rk_pm_tests
+        touch $kerneldir/arch/arm/plat-rk/rk_pm_tests/Makefile
+}
