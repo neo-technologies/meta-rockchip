@@ -16,7 +16,7 @@ SRCREV_pn-${PN} = "${AUTOREV}"
 S = "${WORKDIR}/git"
 
 do_configure_prepend() {
-	make -C "${S}" ${DEFCONFIG}
+	oe_runmake -C "${S}" ${DEFCONFIG}
 
 	# Fix arch QA issues ("Architecture did not match")
 	rm -f ${S}/mkkrnlimg
