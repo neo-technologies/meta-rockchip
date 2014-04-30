@@ -3,8 +3,8 @@
 
 inherit image_types
 
-# This image depends on the rootfs ext3 image
-IMAGE_TYPEDEF_rockchip-update-img = "ext3"
+# This image depends on the rootfs ext4 image
+IMAGE_TYPEDEP_rockchip-update-img = "ext4"
 
 DEPENDS = "mkbootimg-native"
 
