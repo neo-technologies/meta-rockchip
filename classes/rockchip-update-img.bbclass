@@ -6,7 +6,7 @@ inherit image_types
 # This image depends on the rootfs ext4 image
 IMAGE_TYPEDEP_rockchip-update-img = "ext4"
 
-DEPENDS = "mkbootimg-native"
+DEPENDS = "mkbootimg-native rockchip-bootloader"
 
 IMAGE_CMD_rockchip-update-img () {
 	# Fetch bootloader
