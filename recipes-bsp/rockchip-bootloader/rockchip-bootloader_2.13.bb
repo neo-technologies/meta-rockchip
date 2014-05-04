@@ -20,3 +20,11 @@ do_deploy() {
 }
 
 addtask deploy before do_build after do_compile
+
+do_package[noexec] = "1"
+do_packagedata[noexec] = "1"
+do_package_write[noexec] = "1"
+do_package_write_ipk[noexec] = "1"
+do_package_write_rpm[noexec] = "1"
+do_package_write_deb[noexec] = "1"
+do_package_write_tar[noexec] = "1"
