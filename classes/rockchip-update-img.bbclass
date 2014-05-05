@@ -11,7 +11,7 @@ DEPENDS = "mkbootimg-native rockchip-bootloader virtual/kernel"
 FIRMWARE_VER  ?= "1.0"
 MANUFACTURER  ?= "NEO-Technologies"
 MACHINE_MODEL ?= "${MACHINE}"
-CMDLINE       ?= "console=ttyFIQ0 root=/dev/block/mtd/by-name/linuxroot rw rootfstype=ext4"
+CMDLINE       ?= "console=ttyFIQ0 root=/dev/block/mtd/by-name/linuxroot rw rootfstype=ext4 rootdelay=1"
 MTDPARTS      ?= "0x00008000@0x00002000(boot),-@0x0000A000(linuxroot)"
 
 PACKAGE_FILE = "package-file"
