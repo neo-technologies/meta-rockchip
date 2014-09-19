@@ -13,7 +13,6 @@ XSERVER = "xserver-xorg \
 
 PREFERRED_PROVIDER_virtual/kernel = "linux-rockchip-3.0"
 
-KERNEL_IMAGETYPE = "Image"
 IMAGE_CLASSES += "rockchip-update-img"
 IMAGE_FSTYPES += "ext4 rockchip-update-img"
 
