@@ -4,11 +4,11 @@
 inherit kernel
 require recipes-kernel/linux/linux-yocto.inc
 
-TAG = "next-20140917"
+TAG = "next-20141009"
 SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git;tag=${TAG} \
 	file://defconfig"
 
-LINUX_VERSION = "3.18"
+LINUX_VERSION = "3.19"
 LINUX_VERSION_EXTENSION = "${TAG}"
 PR = "r1"
 PV = "${LINUX_VERSION}+git-${TAG}"
