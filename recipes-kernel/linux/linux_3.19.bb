@@ -4,7 +4,7 @@
 inherit kernel
 require recipes-kernel/linux/linux-yocto.inc
 
-TAG = "next-20141009"
+TAG = "next-20141021"
 SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git;tag=${TAG} \
 	file://defconfig"
 
