@@ -19,7 +19,7 @@ PV = "${LINUX_VERSION}+git-${TAG}"
 COMPATIBLE_MACHINE = "radxa-rock"
 
 # Build the devicetree blob in kernel_do_compile
-KERNEL_ALT_IMAGETYPE = "rk3188-radxarock.dtb"
+KERNEL_ALT_IMAGETYPE = "${KERNEL_DEVICETREE_NAME}.dtb"
 # The resulting image to be deployed in DEPLOY_IMAGE_DIR
 KERNEL_OUTPUT = "${B}/arch/${ARCH}/boot/${KERNEL_IMAGETYPE}-dtb"
 
