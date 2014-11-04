@@ -5,11 +5,10 @@ inherit kernel
 require recipes-kernel/linux/linux-yocto.inc
 
 TAG = "next-20141021"
-SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git;tag=${TAG} \
+SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git;nobranch=1 \
 	file://defconfig"
 
-# Don't check branches from do_validate_branches on "dizzy"
-SRCREV_machine = "AUTOINC"
+SRCREV = "92dfcb675c05bea054770332eaeb9ed3cf4b0428"
 # Override this variable in order to don't pass --noallconfig to configme,
 # which restarts configuration from scratch most of the time
 KCONFIG_MODE = " "
