@@ -4,11 +4,11 @@
 inherit kernel
 require recipes-kernel/linux/linux-yocto.inc
 
-TAG = "next-20141021"
+TAG = "next-20141104"
 SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git;nobranch=1 \
 	file://defconfig"
 
-SRCREV = "92dfcb675c05bea054770332eaeb9ed3cf4b0428"
+SRCREV = "f265a73e151794845e801fb065e3fa37f0ec26c2"
 # Override this variable in order to don't pass --noallconfig to configme,
 # which restarts configuration from scratch most of the time
 KCONFIG_MODE = " "
